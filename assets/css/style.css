@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@200;400;700&family=Montserrat&display=swap');
+
+:root {
+    --c-background: #FAF3E0;
+    --c-dark: #B68973;
+    --c-darker: #a06b51;
+    --c-light: #EABF9F;
+    --c-lighter: #fdf3ec;
+    --c-text: #1E212D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+html {
+    background-color: var(--c-background);
+}
+
+body {
+    /* min-height: 100vh;  */
+    background-color: var(--c-background);
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: auto;
+    height: auto;
+    background-color:  var(--c-background);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--c-text);
+}
+
+/* HEADER */
+
+.header {
+    margin: 15px 30px;
+    background-color: var(--c-background);
+    border-radius: 50px;
+}
+
+#logo {
+    width: auto;
+    height: 30px;
+    padding: 0.273px 0.093px 0.039px 0.01px;
+}
+
+.nav-item a {
+    color: var(--c-text);
+    font-family: 'Josefin Sans';
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.nav-item a:hover {
+    color: #B68973;
+    scale: 1.05;
+    transition: 0.4s;
+}
+
+.bi {
+    color: var(--c-text); /* Change this to your desired color */
+}
+
+.bi:hover {
+    transition: 0.4s;
+}
+
+.bi-telephone-fill:hover {
+    color: #08851b;
+}
+
+.bi-envelope-fill:hover {
+    color: #f2a60c;
+}
+
+.bi-linkedin:hover {
+    color: #0077B5;
+}
+
+.bi-youtube:hover {
+    color: #FF0000;
+}
+
+.bi-github:hover {
+    color: #6cc644;
+}
+
+.active {
+    color: var(--c-dark); /* Change this to your desired color */
+    text-decoration: underline;
+}
+
+/* HOME */
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-rows: 0.2fr 0.8fr 1fr;
+    margin: 100px;
+}
+
+.home-content .text {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 0 0 50px 50px; 
+}
+
+.home-content .buttons {
+    grid-column: 1;
+    grid-row: 3;
+    align-content: center; 
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+.home-content .portrait {
+    grid-column: 2;
+    grid-row: 1/span 3;
+}
+
+.home-content .text h1 {
+    color: var(--c-text);
+    font-family: Abril Fatface;
+    font-size: 60px;
+}
+
+.home-content .text h3 {
+    color: var(--c-text);
+    font-family: Montserrat;
+    font-size: 23px;
+}
+
+.home-content .portrait img {
+    width: auto;
+    height: 450px;
+    flex-shrink: 0;
+}
+
+.buttons .btn-primary {
+    width: 230px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--c-text);
+    border: var(--c-text);
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin: 30px 10px;
+    color: var(--c-background);
+}
+
+.buttons .btn-primary:hover {
+    color: var(--c-text);
+    background: var(--c-light);
+    border: var(--c-light);
+}
+
+.buttons .btn-secondary {
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: var(--c-dark);
+    border: var(--c-dark);
+    font-family: Josefin Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    margin: 30px 10px;
+    color: var(--c-background);
+}
+
+.buttons .btn-secondary:hover {
+    color: var(--c-text);
+    background: var(--c-light);
+    border: var(--c-light);
+}
+
+/* PROFILE */
+#profile {
+    padding: 10px 80px;
+    background-color: var(--c-background);
+}
+
+#profile h3 {
+    text-align: center;
+    font-family: Josefin Sans;
+    color: var(--c-text);
+    font-weight: 700;
+}
+
+.content-title {
+    padding-top: 55px;
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    color: var(--c-darker);
+}
+.profile-content {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates 2 columns of equal width */
+    grid-template-rows: auto auto; /* Creates 2 rows that adjust to their content */
+}
+
+.profile-box {
+    border-style: solid;
+    border-color: var(--c-light);
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.profile-box p, li {
+    font-size: 18px;
+    color: black;
+}
+
+#introduction {
+    grid-column: 1;
+    grid-row: 1 / span 2; /* Spans both rows */
+
+}
+
+#education {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#certification {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Career */
+#career {
+    margin: 20px;
+}
+
+.career-box {
+    border-style: solid;
+    border-color: var(--c-light);
+    border-radius: 50px;
+    padding: 30px;
+    margin: 20px;
+    max-width: auto;
+}
+
+#career h3 {
+    text-align: center;
+    font-family: Josefin Sans;
+    color: var(--c-text);
+    font-weight: 700;
+}
+
+#career h4 {
+    text-align: center;
+    font-family: Josefin Sans;
+    color: var(--c-text);
+    font-weight: 500;
+}
+/* Achievement */
+
+#achivement {
+    padding: 10px 80px;
+    background-color: var(--c-dark);
+}
+
+.card {
+    background-color: var(--c-text)!important; /* Change this to your desired color */
+    border-radius: 20px!important; /* Adjust this value to change the border radius */
+}
+
+.card img{
+    border-radius: 20px!important; /* Adjust this value to change the border radius */
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adjust this value to change the space between the cards */
+}
+
+.card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: var(--c-light)!important;
+    text-align: center;
+}
+
+.card-text {
+    text-align: justify;
+    font-style: italic;
+    color: var(--c-lighter)!important;
+}
+
+.card-body .btn {
+    border-radius: 20px;
+    width: 110px;
+    margin-left: 10px;
+}
+
+/* Project */
+
+.project-accordion {
+    margin: 20px;
+    padding: 10px;
+}
+
+.accordion-button, .accordion-collapse {
+    background-color: var(--c-lighter)!important;
+}
+
+.accordion h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 27px;
+    color: var(--c-dark);
+}
+
+.accordion p {
+    font-size: 18px;
+    color: var(--c-text);
+}
+
+footer {
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: var(--c-text); 
+    color: white; 
+    text-align: left;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--c-lighter);
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--c-light);
+    transition: 0.5s;
+}
+
+.footer-title {
+    padding: 1rem 0;
+    margin: 0;
+    color: var(--c-light);
+}
